@@ -29,3 +29,11 @@ If you want edit library an se real time result in your project, execute the wat
 ```
 ng build autocomplete --watch
 ```
+
+## Publish version
+
+For publish version for first compile eht module and then publis on npm 
+```
+ng build autocomplete 
+npm publish dist/autocomplete/
+```
