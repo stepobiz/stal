@@ -1,27 +1,31 @@
 # Stal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+This is the project for manage 4 angular Library of tools developed by StepoBiz
+
+The libraries is
+- autocomplete
+- carder
+- eventer
+- paginator
+
+The library is not dependent on each other. The guide is based on the firs module as example but all is the same.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For use library cloned localy, in your project is necessary build it and use the dist folder as npm link, like in this example:
+```
+ng build autocomplete
+cd dist/autocomplete
+sudo npm link
+```
 
-## Code scaffolding
+after go in your project and link it to library
+```
+cd your_project_folder
+npm link @stal/autocomplete
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If you want edit library an se real time result in your project, execute the watch builder in library folder:
+```
+ng build autocomplete --watch
+```
