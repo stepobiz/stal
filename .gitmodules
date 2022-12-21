@@ -1,0 +1,12 @@
+[submodule "projects/paginator"]
+	path = projects/paginator
+	url = git@github.com:stepobiz/stal-paginator.git
+[submodule "projects/autocomplete"]
+	path = projects/autocomplete
+	url = git@github.com:stepobiz/stal-autocomplete.git
+[submodule "projects/carder"]
+	path = projects/carder
+	url = git@github.com:stepobiz/stal-carder.git
+[submodule "projects/eventer"]
+	path = projects/eventer
+	url = git@github.com:stepobiz/stal-eventer.git
