@@ -2,6 +2,20 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "autocomplete": [
+        "dist/autocomplete"
+      ],
+      "carder": [
+        "dist/carder"
+      ],
+      "eventer": [
+        "dist/eventer"
+      ],
+      "paginator": [
+        "dist/paginator"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

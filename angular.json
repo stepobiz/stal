@@ -3,5 +3,129 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "autocomplete": {
+      "projectType": "library",
+      "root": "projects/autocomplete",
+      "sourceRoot": "projects/autocomplete/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/autocomplete/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/autocomplete/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/autocomplete/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/autocomplete/src/test.ts",
+            "tsConfig": "projects/autocomplete/tsconfig.spec.json",
+            "karmaConfig": "projects/autocomplete/karma.conf.js"
+          }
+        }
+      }
+    },
+    "carder": {
+      "projectType": "library",
+      "root": "projects/carder",
+      "sourceRoot": "projects/carder/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/carder/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/carder/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/carder/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/carder/src/test.ts",
+            "tsConfig": "projects/carder/tsconfig.spec.json",
+            "karmaConfig": "projects/carder/karma.conf.js"
+          }
+        }
+      }
+    },
+    "eventer": {
+      "projectType": "library",
+      "root": "projects/eventer",
+      "sourceRoot": "projects/eventer/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/eventer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/eventer/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/eventer/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/eventer/src/test.ts",
+            "tsConfig": "projects/eventer/tsconfig.spec.json",
+            "karmaConfig": "projects/eventer/karma.conf.js"
+          }
+        }
+      }
+    },
+    "paginator": {
+      "projectType": "library",
+      "root": "projects/paginator",
+      "sourceRoot": "projects/paginator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/paginator/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/paginator/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/paginator/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/paginator/src/test.ts",
+            "tsConfig": "projects/paginator/tsconfig.spec.json",
+            "karmaConfig": "projects/paginator/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
